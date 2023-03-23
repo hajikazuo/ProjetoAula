@@ -42,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnGerarPDF = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,11 +179,23 @@
             this.label1.TabIndex = 29;
             this.label1.Text = "Código:";
             // 
+            // btnGerarPDF
+            // 
+            this.btnGerarPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerarPDF.Location = new System.Drawing.Point(416, 208);
+            this.btnGerarPDF.Name = "btnGerarPDF";
+            this.btnGerarPDF.Size = new System.Drawing.Size(83, 44);
+            this.btnGerarPDF.TabIndex = 43;
+            this.btnGerarPDF.Text = "Gerar PDF";
+            this.btnGerarPDF.UseVisualStyleBackColor = true;
+            this.btnGerarPDF.Click += new System.EventHandler(this.btnGerarPDF_Click);
+            // 
             // TelaProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGerarPDF);
             this.Controls.Add(this.dgvDados);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.cbxCategoria);
@@ -198,7 +211,8 @@
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Name = "TelaProduto";
-            this.Text = "TelaProduto";
+            this.Text = "Gerar PDF";
+            this.Load += new System.EventHandler(this.TelaProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -221,5 +235,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGerarPDF;
     }
 }

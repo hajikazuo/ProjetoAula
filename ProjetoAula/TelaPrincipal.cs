@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoAula
 {
-    public partial class Form1 : Form
+    public partial class TelaPrincipal : Form
     {
-        public Form1()
+        public TelaPrincipal()
         {
             InitializeComponent();
         }
@@ -43,6 +43,11 @@ namespace ProjetoAula
             };
             plPrincipal.Controls.Add(tela);
             tela.Show();
+        }
+
+        private void TelaPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

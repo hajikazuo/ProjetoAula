@@ -1,6 +1,6 @@
 ﻿namespace ProjetoAula
 {
-    partial class Form1
+    partial class TelaPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -85,15 +85,16 @@
             this.btnCliente.UseVisualStyleBackColor = true;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
-            // Form1
+            // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.plPrincipal);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "TelaPrincipal";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
