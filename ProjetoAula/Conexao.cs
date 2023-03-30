@@ -12,9 +12,9 @@ namespace Aula_3___conexao_com_banco_de_dados
     internal class Conexao
     {
         static private string servidor = "localhost";
-        static private string banco = "bd_aula";
+        static private string banco = "bd_teste";
         static private string usuario = "root";
-        static private string senha = "";
+        static private string senha = "1234";
 
         static public string strConn = $"server={servidor};" +
             $"database={banco}; User Id={usuario};" +
